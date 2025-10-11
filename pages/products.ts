@@ -15,6 +15,7 @@ export class ProductsPage {
   private readonly removeBackPackItem: Locator;
   private readonly removeBikeLightItem: Locator;
   private readonly shoppingCartCounter: Locator;
+  private readonly shoppingCartLink: Locator;
   private readonly sortDropdown: Locator;
 
   // Constructor
@@ -32,6 +33,7 @@ export class ProductsPage {
       "remove-sauce-labs-bike-light"
     );
     this.shoppingCartCounter = this.page.getByTestId("shopping-cart-badge");
+    this.shoppingCartLink = this.page.getByTestId("shopping-cart-link");
     this.sortDropdown = this.page.getByTestId("product-sort-container");
   }
 
@@ -83,6 +85,10 @@ export class ProductsPage {
       parseFloat(price.replace("$", ""))
     );
     return pricesNumber;
+  }
+
+  async clickShoppingCart() {
+    await this.shoppingCartLink.click();
   }
   
 }
