@@ -14,7 +14,7 @@ This project contains automated end-to-end tests for the Sauce Demo application 
 
 1. Clone the repository:
 ```bash
-git clone git@github.com:Eslam-Medhat/scb.git
+git clone https://github.com/Eslam-Medhat/scb.git
 cd scb
 ```
 
