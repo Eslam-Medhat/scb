@@ -14,7 +14,7 @@ This project contains automated end-to-end tests for the Sauce Demo application 
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone git@github.com:Eslam-Medhat/scb.git
 cd scb
 ```
 
@@ -51,7 +51,7 @@ npx playwright install-deps
 │   └── logger.ts
 └── playwright.config.ts
 ```
-Our implementation:
+implementation:
 - Each page has its own class (e.g., `LoginPage`, `ProductsPage`)
 - Page classes encapsulate locators and actions
 - Tests only interact with page methods, never directly with elements
@@ -59,7 +59,7 @@ Our implementation:
 
 ## Authentication Approach
 
-We use Playwright's storage state feature to save and reuse authentication state.
+Using Playwright's storage state feature to save and reuse authentication state.
 
 This means:
 - Login happens once during setup
@@ -70,7 +70,7 @@ This means:
 
 ## Local Storage Injection for Cart Items
 
-In our tests, we inject cart items directly into localStorage before page load.
+In the tests, I inject cart items directly into localStorage before page load.
 
 Benefits of this approach:
 - Tests start with known cart state
