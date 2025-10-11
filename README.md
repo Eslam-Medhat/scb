@@ -84,6 +84,11 @@ Benefits of this approach:
 ```bash
 npx playwright test
 ```
+OR
+
+```bash
+npm run test
+```
 
 2. Run specific test file:
 ```bash
