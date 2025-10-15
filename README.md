@@ -80,7 +80,9 @@ Benefits of this approach:
 
 ## Running Tests
 
-1. Run all tests:
+1. Create .env file on root and copy values from example.env
+
+2. Run all tests:
 ```bash
 npx playwright test
 ```
@@ -90,22 +92,22 @@ OR
 npm run test
 ```
 
-2. Run specific test file:
+3. Run specific test file:
 ```bash
 npx playwright test tests/products.spec.ts
 ```
 
-3. Run tests in headed mode (visible browser):
+4. Run tests in headed mode (visible browser):
 ```bash
 npx playwright test --headed
 ```
 
-4. Run tests with HTML report:
+5. Run tests with HTML report:
 ```bash
 npx playwright test --reporter=html
 ```
 
-5. Update authentication state (if needed):
+6. Update authentication state (if needed):
 ```bash
 npx playwright test --project=setup
 ```
